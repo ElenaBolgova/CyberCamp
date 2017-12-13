@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700&subset=cyrillic-ext');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    background: url("../images/background.png") no-repeat -80px 100px;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0 0 130px;
+}
+
+.wrapper-inner {
+    width: 1230px;
+    margin: 0 auto;
+}
+
+/*****************header*****************/
+
+.header-background {
+    background-color: #ffffff;
+    height: auto;
+}
+
+header .wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 18px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-logo {
+    transition: .4s;
+}
+
+.header-logo:hover {
+    transform: translateX(10px) rotate(0);
+    opacity: 0.7;
+}
+
+.phone-block {
+    align-self: flex-start;
+    margin-left: 10px;
+}
+
+.phone-number span {
+    color: #d53b3b;
+    font-size: 25px;
+}
+
+.phone-number {
+    color: #000000;
+    font-size: 25px;
+    transition: .4s;
+}
+
+.phone-number:hover {
+    color: #d53b3b;
+}
+
+.phone-info {
+    color: #334247;
+    font-size: 14px;
+    margin: 4px 0 0 0;
+}
+
+nav {
+    align-self: baseline;
+    margin: 17px 0 0 24px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 24px;
+}
+
+nav li a {
+    color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    transition: .4s;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+header li a:hover {
+    color: #db3232;
+}
+
+.button-red {
+    background: url("../images/red-button.png");
+}
+
+header .button-red {
+    margin: -2px 0 0 1px;
+}
+
+.button-red:hover {
+    background: url("../images/black-button.png");
+    transform: translateY(5px);
+}
+
+.button {
+    text-align: center;
+    line-height: 55px;
+    width: 176px;
+    height: 55px;
+    transition: 1s;
+}
+
+.button-text {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/*****************main*****************/
+
+h1 {
+    position: relative;
+    z-index: 1;
+    margin-top: 95px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 57px;
+    font-weight: bold;
+}
+
+h1:before {
+    position: absolute;
+    display: block;
+    width: 223px;
+    height: 198px;
+    content: "";
+    background: url("../images/shadow.png") no-repeat 0 0;
+    left: 0;
+    top: 0;
+    margin: -55px 0 0 230px;
+    z-index: -1;
+}
+
+p {
+    margin-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 23px 0 0 10px;
+}
+
+.main-buttons .button-red {
+    margin-right: 25px;
+}
+
+.button-black {
+    background: url("../images/black-button.png");
+}
+
+.button-black:hover {
+    background: url("../images/red-button.png");
+    transform: translateY(5px);
+}
+
+h2 {
+    margin-top: 93px;
+    text-align: center;
+    color: #db3232;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.partner-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 0 120px;
+    list-style-type: none;
+}
+
+.partner-link {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 145px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.partner-link img {
+    align-self: center;
+    transition: .4s;
+    filter: grayscale(100%);
+}
+
+.partner-link img:hover {
+    filter: none;
+}
+
+.street-fighter img {
+    margin: 17px 0 0 5px;
+}
+
+.partner span {
+    display: block;
+    margin-top: 17px;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+/*****************footer*****************/
+
+footer {
+    background-image: url("../images/footer-background.png");
+    height: 120px;
+    line-height: 1.3;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+footer .wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.footer-logo {
+    transition: .4s;
+}
+
+.footer-logo:hover {
+    transform: scaleX(1.1) scaleY(1.1) translateX(5px);
+}
+
+div.copyright {
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footer-right {
+    padding: 27px 0;
+}
